@@ -1,8 +1,26 @@
 aid: shef
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shef.png
 name: Shef
-description: Shef is a company surfaced as a portfolio company of a16z, craft-ventures, crv and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Shef is a consumer marketplace for homemade food, connecting home cooks
+  and chefs with nearby customers who order freshly prepared, culturally diverse meals
+  delivered to their door. Cooks build a menu, take orders, and ship weekly; eaters
+  browse local shefs, order meals, and reheat at home. The company operates a business-to-consumer
+  web and mobile ordering experience and does not publish a public developer API,
+  documentation portal, SDKs, or webhook surface. This API Evangelist profile was
+  created as a lead from venture-capital portfolio data and enriched via live web
+  and DNS/TLS probing; the honest result of that pass is that Shef exposes no public
+  API artifacts, only a consumer storefront and standard company pages.
 url: https://raw.githubusercontent.com/api-evangelist/shef/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Food Delivery
+- Marketplace
+- Homemade Food
+- Consumer
+- Food Tech
+- Local Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +49,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://myshef.com
+  url: https://shef.com
+- type: Support
+  url: https://help.shef.com
+- type: SignUp
+  url: https://shef.com/become-a-shef
+- type: TermsOfService
+  url: https://shef.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://shef.com/privacy-policy
+- type: Careers
+  url: https://shef.com/careers
+- type: DomainSecurity
+  url: security/shef-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
